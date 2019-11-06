@@ -2,4 +2,4 @@
 
 [Resume.pdf](resume.pdf)
 
-![alt tag](https://raw.githubusercontent.com/pranabs1ngh/Deedy-Resume/master/image.png)
+![alt tag](https://raw.githubusercontent.com/g-ravity/Deedy-Resume/master/image.png)
