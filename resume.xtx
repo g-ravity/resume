@@ -39,8 +39,8 @@
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\namesection{Pranab}{Singh}{
-\href{mailto:pranabb.singh@gmail.com}{pranabb.singh@gmail.com} | 891-085-1148
+\namesection{Ravik}{Ganguly}{
+\href{mailto:theravikganguly@gmail.com}{theravikganguly@gmail.com} | 86971-55714
 }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -57,17 +57,17 @@
 
 \section{Education} 
 
-\subsection{MEGHNAD SAHA INSTITUTE}
-\subsection{OF TECHNOLOGY}
-\descript{Bachelor in Computer Application}
+\subsection{JADAVPUR UNIVERSITY}
+\descript{Bachelor of Engineering,}
+\descript{Information Technology}
 \location{June 2020 | Kolkata, India}
-\location{ Cum. GPA: 8.2 / 10}
+\location{ CGPA: 7 / 10}
 \sectionsep
 
 \subsection{Calcutta Public School}
 \descript{High School}
 \location{Grad. May 2016|  Kolkata, India}
-\location{ Percentage: 83.25 / 100}
+\location{ Percentage: 95.3\% }
 \sectionsep
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -75,9 +75,8 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \section{Links} 
-Github:// \href{https://github.com/pranabs1ngh}{\bf pranabs1ngh} \\
-LinkedIn://  \href{https://www.linkedin.com/in/pranabs1ngh}{\bf pranabs1ngh} \\
-Twitter://  \href{https://twitter.com/pranabs1ngh}{\bf @pranabs1ngh} \\
+Github:// \href{https://github.com/g-ravity}{\bf g-ravity} \\
+LinkedIn://  \href{https://www.linkedin.com/in/ravik-ganguly-515549137/}{\bf ravik-ganguly} \\
 \sectionsep
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -87,24 +86,26 @@ Twitter://  \href{https://twitter.com/pranabs1ngh}{\bf @pranabs1ngh} \\
 \section{Coursework}
 
 \subsection{Undergraduate}
-Design and Analysis of Algorithms \\
-Data Structures with C \\
+Data Structures \& Algorithms \\
 Database Management Systems \\
-Computer Architecture\\
 Operating Systems \\
 Computer Networks \\
-Unix and Shell Scripting \\
+Cryptography and Cybersecurity \\
+System Design \\
 \sectionsep
 
 \subsection{Relevant Courses}
 \descript{Udemy}
-Modern React with Redux \textbullet{}
+MongoDB - The Developer's Guide \textbullet{}
 Node.js : Building RESTful APIs \textbullet{}
+Modern React with Redux \textbullet{}
 Advanced React and Redux \textbullet{}
+React Native + Hooks Course \textbullet{}
 Node.js : Advanced Concepts \textbullet{}
-Django Core : Guide to Core Django Concepts \textbullet{}
 Junior to Senior Web Developer Course \textbullet{}
-The Complete React Native + Hooks Course \textbullet{}
+Electron for Desktop Apps \textbullet{}
+Python and Django Full Stack Bootcamp \textbullet{}
+The Ultimate MySQL Bootcamp \textbullet{}
 Docker \& Kubernetes : The Complete Guide \\
 \sectionsep
 
@@ -115,14 +116,13 @@ Docker \& Kubernetes : The Complete Guide \\
 \section{Skills}
 \subsection{Programming}
 \descript{General:}
-Database \textbullet{} Algorithms \textbullet{} Server Side Programming \\
+ Server Side Programming \textbullet{} Algorithms \textbullet{} Database \\
 \descript{Languages:}
-C \textbullet{} C++ \textbullet{} Python \textbullet{} HTML \textbullet{} CSS \\
-JavaScript \textbullet{} \LaTeX\ \\
+JavaScript \textbullet{}  Python \textbullet{} C++ \textbullet{} \LaTeX\ \\
 \descript{Tools / Framework:}
-NodeJs \textbullet{} django \textbullet{} ReactJs \textbullet{} Redux \\
-Docker \textbullet{} Kubernetes \textbullet{} React Native \\
-MySQL \textbullet{} MongoDB \\
+NodeJs \textbullet{} Express \textbullet{} django \textbullet{} MySQL \\
+ReactJs \textbullet{} Redux \textbullet{} React Native \\
+Docker \textbullet{} Kubernetes \textbullet{} MongoDB \\
 \sectionsep
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -141,13 +141,25 @@ MySQL \textbullet{} MongoDB \\
 
 \section{Experience}
 
-\runsubsection{Upwork}
-\descript{| Full Stack JavaScript / Python Developer (Remote) }
-\location{Feb 2019 - Present}
+\runsubsection{Winsome IT Solutions}
+\descript{| Full Stack Javascript Developer }
+\location{Oct 2019 - Present}
 \vspace{\topsep} % Hacky fix for awkward extra vertical space
 \begin{tightemize}
-\item Developed fully test driven highly scalable systems for clients accross world
-\item Worked with local clients to create their online business systems from scratch
+\item Developed the Winsome Official Website, Callpay Website, and internal CRM of the organization
+\item Providing consultation about MERN stack and backend development in general
+\end{tightemize}
+
+\runsubsection{Dumanhill Technologies}
+\descript{| Web Developer Intern }
+\location{Feb 2019 - Apr 2019}
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}
+\item Enhanced the frontend of an online health monitoring app in Angular and Bootstrap
+\item Helped to strategize and develop the admin panel of the health monitoring app
+\item Started to migrate the system architecture from monolithic to distributed microservices architecture, to scale the app horizontally
+\item Developed the API of an e-commerceapp using Node.js, Express and MongoDB. Features included OTP authentication and Payment Gateway integration
+\item Designed the UI/UX and developed the screens of the e-commerce app in Android
 \end{tightemize}
 \sectionsep
 
@@ -157,59 +169,49 @@ MySQL \textbullet{} MongoDB \\
 
 \section{Projects}
 
-\runsubsection{Flock}
-\descript{| Full Fledged Native Messaging Application }
-\location{Sept 2019 - Present}
+\runsubsection{War of Words}
+\descript{| Multiplayer Text Battle Web Game }
+\location{Apr 2019 - May 2019}
 \vspace{\topsep} % Hacky fix for awkward extra vertical space
 \begin{tightemize}
-\item Developed all screens with React Native based on reusable components architecture
-\item Implemented peer to peer instant messaging using web sockets protocol
-\item Implemented group messaging feature
-\item Implemented Audio and Video Call using WebRTC
-\item Wrote server using micro-services architecture
-\item Created server and micro-services in Docker based containers
-\item Implemented load balancer using Kubernetes (for multiple server instances)
-\item Created a basic messaging queue from scratch
-\item Implemented MQ and Authentication service using serverless functions (AWS Lambda / Google Cloud Functions)
-\item Enabled end-to-end encryption using RSA encryption method
+\item Developed all screens with React Native based on Flux architecture
+\item Implemented Websockets using Socket.io for realtime client server communication
+\item Added private room functionality using GUID and Socket.io rooms
+\item Designed turn based game system using Node.js and client side Javascript
 \end{tightemize}
 \sectionsep
 
-\runsubsection{Quivia}
-\descript{| Quiz Game with single/multi-player options }
-\location{July 2019 – Aug 2019}
+\runsubsection{Suji Dokushin}
+\descript{| The authentic Japanese Sudoku Game }
+\location{Sept 2019 - Sept 2019}
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
 \begin{tightemize}
-\item Developed all screens using React based on reusable components architecture
-\item Wrote Screen Update logic based on current game state
-\item Implemented user authentication using google/facebook OAuth or local authentication
-\item Used socket.io to transfer data between two players
-\item Wrote algorithm to maintain socket rooms and match players for a game with specific id
-\item Developed a simple bot to play with the user in case the server can't find an opponent to play with
+\item Implemented recursive backtracking algorithm to generate Sudoku boards of varying difficulty
+\item Built all the screens using functional components and React hooks
+\item Flux architecture using React Context
 \end{tightemize}
 \sectionsep
 
-\runsubsection{Sudoku Saga}
-\descript{| Native Sudoku Application }
-\location{Sept 2019 – Oct 2019}
+\runsubsection{Amazeing}
+\descript{| The Maze Game }
+\location{Aug 2019 - Oct 2019}
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
 \begin{tightemize}
-\item Developed all screens using React Native based on reusable components architecture
-\item Wrote a backtracking algorithm from scratch to generate a sudoku board
-\item Hid number of cells based on difficulty level selected by user
-\item Implemented undo / erase / pencil / hint features from scratch
-\item Created a fully functional native app in React Native
-\item Built with reusable components based on React App Architecture
+\item Implemented recursive Backtracking algorithm to generate mazes of varying difficulty
+\item Developed stack data structure to replace the default Javascript function call stack, to handle the large number of recursive operations
+\item Implemented MVC pattern using ES6 modules and classes, to separate the maze model and view logic
 \end{tightemize}
+\sectionsep
 
-\runsubsection{Nagini}
-\descript{| Snake game built for pesto bootcamp }
-\location{Sept 2019 – Sept 2019}
+\runsubsection{Github Script}
+\descript{| Manage Github right from the terminal }
+\location{Jul 2019 - Aug 2019}
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
 \begin{tightemize}
-\item  The game is playable by either the arrow keys or 'W', 'A', 'S', 'D'.
-\item Implemented the game logic from scratch in JavaScript
-\item Developed all screens using React based on reusable components architecture
-\item Implemented screen updates using React life-cycle methods
-\item Created API to store high scores and user data in NODE
+\item Implemented browser automation using Selenium Webdriver, to delete specified github repositories
+\item Implemented command line animation in a background thread
 \end{tightemize}
+\sectionsep
 
 \end{minipage} 
 \end{document}  \documentclass[]{article}
