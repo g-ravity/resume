@@ -1,4 +1,4 @@
-## Resume - Pranab Singh
+## Resume - Ravik Ganguly
 
 [Resume.pdf](resume.pdf)
 
