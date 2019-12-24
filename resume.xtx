@@ -158,7 +158,7 @@ Docker \textbullet{} Kubernetes \textbullet{} MongoDB \\
 \item Enhanced the frontend of an online health monitoring app in Angular and Bootstrap
 \item Helped to strategize and develop the admin panel of the health monitoring app
 \item Started to migrate the system architecture from monolithic to distributed microservices architecture, to scale the app horizontally
-\item Developed the API of an e-commerceapp using Node.js, Express and MongoDB. Features included OTP authentication and Payment Gateway integration
+\item Developed the API of an e-commerce app using Node.js, Express and MongoDB. Features included OTP authentication and Payment Gateway integration
 \item Designed the UI/UX and developed the screens of the e-commerce app in Android
 \end{tightemize}
 \sectionsep
@@ -169,6 +169,17 @@ Docker \textbullet{} Kubernetes \textbullet{} MongoDB \\
 
 \section{Projects}
 
+\runsubsection{QuizBud}
+\descript{| Online Personality Quiz Maker to Share with Friends }
+\location{Nov 2019 - Dec 2019}
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}
+\item Full Stack app developed using React, Node.js and MongoDB
+\item User can create his/her own quiz. Players can visit the link to play the quiz
+\item Features also include an admin panel to modify the questions
+\end{tightemize}
+\sectionsep
+
 \runsubsection{War of Words}
 \descript{| Multiplayer Text Battle Web Game }
 \location{Apr 2019 - May 2019}
@@ -177,7 +188,6 @@ Docker \textbullet{} Kubernetes \textbullet{} MongoDB \\
 \item Developed all screens with React Native based on Flux architecture
 \item Implemented Websockets using Socket.io for realtime client server communication
 \item Added private room functionality using GUID and Socket.io rooms
-\item Designed turn based game system using Node.js and client side Javascript
 \end{tightemize}
 \sectionsep
 
@@ -187,8 +197,7 @@ Docker \textbullet{} Kubernetes \textbullet{} MongoDB \\
 \vspace{\topsep} % Hacky fix for awkward extra vertical space
 \begin{tightemize}
 \item Implemented recursive backtracking algorithm to generate Sudoku boards of varying difficulty
-\item Built all the screens using functional components and React hooks
-\item Flux architecture using React Context
+\item Built all the screens using functional components, React hooks and Flux architecture using React Context
 \end{tightemize}
 \sectionsep
 
@@ -200,16 +209,6 @@ Docker \textbullet{} Kubernetes \textbullet{} MongoDB \\
 \item Implemented recursive Backtracking algorithm to generate mazes of varying difficulty
 \item Developed stack data structure to replace the default Javascript function call stack, to handle the large number of recursive operations
 \item Implemented MVC pattern using ES6 modules and classes, to separate the maze model and view logic
-\end{tightemize}
-\sectionsep
-
-\runsubsection{Github Script}
-\descript{| Manage Github right from the terminal }
-\location{Jul 2019 - Aug 2019}
-\vspace{\topsep} % Hacky fix for awkward extra vertical space
-\begin{tightemize}
-\item Implemented browser automation using Selenium Webdriver, to delete specified github repositories
-\item Implemented command line animation in a background thread
 \end{tightemize}
 \sectionsep
 
