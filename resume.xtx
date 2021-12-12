@@ -77,6 +77,7 @@
 \section{Links} 
 Github:// \href{https://github.com/g-ravity}{\bf g-ravity} \\
 LinkedIn://  \href{https://www.linkedin.com/in/ravik-ganguly-515549137/}{\bf ravik-ganguly} \\
+Twitter://  \href{https://twitter.com/the_gravityguy}{\bf the\_gravityguy} \\
 \sectionsep
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -89,24 +90,18 @@ LinkedIn://  \href{https://www.linkedin.com/in/ravik-ganguly-515549137/}{\bf rav
 Data Structures \& Algorithms \\
 Database Management Systems \\
 Operating Systems \\
-Computer Networks \\
-Cryptography and Cybersecurity \\
 System Design \\
 \sectionsep
 
 \subsection{Relevant Courses}
 \descript{Udemy}
 MongoDB - The Developer's Guide \textbullet{}
-Node.js : Building RESTful APIs \textbullet{}
-Modern React with Redux \textbullet{}
-Advanced React and Redux \textbullet{}
-React Native + Hooks Course \textbullet{}
-Node.js : Advanced Concepts \textbullet{}
+Advanced React and Redux \textbullet{} \\
+Node.js : Advanced Concepts \textbullet{} \\
 Junior to Senior Web Developer Course \textbullet{}
-Electron for Desktop Apps \textbullet{}
-Python and Django Full Stack Bootcamp \textbullet{}
-The Ultimate MySQL Bootcamp \textbullet{}
-Docker \& Kubernetes : The Complete Guide \\
+PostgreSQL: Complete Developer's Guide \textbullet{}
+Epic React \textbullet{}
+Grokking System Design Interview
 \sectionsep
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -116,13 +111,14 @@ Docker \& Kubernetes : The Complete Guide \\
 \section{Skills}
 \subsection{Programming}
 \descript{General:}
- Server Side Programming \textbullet{} Algorithms \textbullet{} Database \\
+ Server Side Programming \textbullet{} Algorithms \textbullet{} System Design \\
 \descript{Languages:}
-JavaScript \textbullet{}  Python \textbullet{} C++ \textbullet{} \LaTeX\ \\
+JavaScript \textbullet{}  Bash \\
+Typescript \textbullet{} Node\ \\
 \descript{Tools / Framework:}
-NodeJs \textbullet{} Express \textbullet{} django \textbullet{} MySQL \\
-ReactJs \textbullet{} Redux \textbullet{} React Native \\
-Docker \textbullet{} Kubernetes \textbullet{} MongoDB \\
+NodeJs \textbullet{} Express \textbullet{} MongoDB \\ 
+PostgreSQL \textbullet{} ElasticSearch \\
+React \textbullet{} Recoil \textbullet{} Next.js \\
 \sectionsep
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -141,13 +137,41 @@ Docker \textbullet{} Kubernetes \textbullet{} MongoDB \\
 
 \section{Experience}
 
+\runsubsection{Yellow Class}
+\descript{| Fullstack SDE II }
+\location{Aug 2020 - Present}
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}
+\item Responsible for the complete development and maintenance of the admin panel of the platform.
+\item Improved response time of slow MongoDB queries
+\item Implemented custom file upload and processing system using Dropbox API,  S3 and AWS MediaConvert.
+\item Implemented Instagram reels like feature using ElasticSearch \& RabbitMQ
+\item Designed a system to generate pdf certificates in Node and upload them to S3 from JSON data collected from MongoDB
+\end{tightemize}
+
+\runsubsection{African Price}
+\descript{| Freelance Developer }
+\location{May 2020 - Jul 2020}
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}
+\item Designed the complete backend architecture of a Q\&A platform tailored for African countries. Designed and developed the frontend using React, Next.js
+\end{tightemize}
+
+\runsubsection{Kredent InfoEdge}
+\descript{| React Native Developer Intern }
+\location{Jan 2020 - Apr 2020}
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}
+\item Developed a social media app for traders \& investors using using React Native,  Node.js,  Graphql,  TypeORM and PostgreSQL.
+\item Was actively involved in designing the schema and the backend system architecture.
+\end{tightemize}
+
 \runsubsection{Winsome IT Solutions}
 \descript{| Full Stack Javascript Developer }
-\location{Oct 2019 - Present}
+\location{Oct 2019 - Dec 2019}
 \vspace{\topsep} % Hacky fix for awkward extra vertical space
 \begin{tightemize}
 \item Developed the Winsome Official Website, Callpay Website, and internal CRM of the organization
-\item Providing consultation about MERN stack and backend development in general
 \end{tightemize}
 
 \runsubsection{Dumanhill Technologies}
@@ -155,11 +179,8 @@ Docker \textbullet{} Kubernetes \textbullet{} MongoDB \\
 \location{Feb 2019 - Apr 2019}
 \vspace{\topsep} % Hacky fix for awkward extra vertical space
 \begin{tightemize}
-\item Enhanced the frontend of an online health monitoring app in Angular and Bootstrap
-\item Helped to strategize and develop the admin panel of the health monitoring app
-\item Started to migrate the system architecture from monolithic to distributed microservices architecture, to scale the app horizontally
+\item Enhanced frontend of an online health monitoring app in Angular \& Bootstrap
 \item Developed the API of an e-commerce app using Node.js, Express and MongoDB. Features included OTP authentication and Payment Gateway integration
-\item Designed the UI/UX and developed the screens of the e-commerce app in Android
 \end{tightemize}
 \sectionsep
 
@@ -169,47 +190,34 @@ Docker \textbullet{} Kubernetes \textbullet{} MongoDB \\
 
 \section{Projects}
 
+\runsubsection{Shoonya Back Office}
+\descript{| Brokerage \& Analytics For Finvasia }
+\location{Dec 2021 - Jan 2021}
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\sectionsep
+
+\runsubsection{MarkIt}
+\descript{| Github MD file generator form rich text }
+\location{Apr 2020 - May 2020}
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\sectionsep
+
 \runsubsection{QuizBud}
 \descript{| Online Personality Quiz Maker to Share with Friends }
 \location{Nov 2019 - Dec 2019}
 \vspace{\topsep} % Hacky fix for awkward extra vertical space
-\begin{tightemize}
-\item Full Stack app developed using React, Node.js and MongoDB
-\item User can create his/her own quiz. Players can visit the link to play the quiz
-\item Features also include an admin panel to modify the questions
-\end{tightemize}
 \sectionsep
 
 \runsubsection{War of Words}
 \descript{| Multiplayer Text Battle Web Game }
 \location{Apr 2019 - May 2019}
 \vspace{\topsep} % Hacky fix for awkward extra vertical space
-\begin{tightemize}
-\item Developed all screens with React Native based on Flux architecture
-\item Implemented Websockets using Socket.io for realtime client server communication
-\item Added private room functionality using GUID and Socket.io rooms
-\end{tightemize}
-\sectionsep
-
-\runsubsection{Suji Dokushin}
-\descript{| The authentic Japanese Sudoku Game }
-\location{Sept 2019 - Sept 2019}
-\vspace{\topsep} % Hacky fix for awkward extra vertical space
-\begin{tightemize}
-\item Implemented recursive backtracking algorithm to generate Sudoku boards of varying difficulty
-\item Built all the screens using functional components, React hooks and Flux architecture using React Context
-\end{tightemize}
 \sectionsep
 
 \runsubsection{Amazeing}
 \descript{| The Maze Game }
 \location{Aug 2019 - Oct 2019}
 \vspace{\topsep} % Hacky fix for awkward extra vertical space
-\begin{tightemize}
-\item Implemented recursive Backtracking algorithm to generate mazes of varying difficulty
-\item Developed stack data structure to replace the default Javascript function call stack, to handle the large number of recursive operations
-\item Implemented MVC pattern using ES6 modules and classes, to separate the maze model and view logic
-\end{tightemize}
 \sectionsep
 
 \end{minipage} 
