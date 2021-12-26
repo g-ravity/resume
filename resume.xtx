@@ -143,7 +143,7 @@ React \textbullet{} Recoil \textbullet{} Next.js \\
 \vspace{\topsep} % Hacky fix for awkward extra vertical space
 \begin{tightemize}
 \item Responsible for the complete development and maintenance of the admin panel of the platform.
-\item Improved response time of slow MongoDB queries
+\item Improved response time of slow MongoDB queries by 50-80\%
 \item Implemented custom file upload and processing system using Dropbox API,  S3 and AWS MediaConvert.
 \item Implemented Instagram reels like feature using ElasticSearch \& RabbitMQ
 \item Designed a system to generate pdf certificates in Node and upload them to S3 from JSON data collected from MongoDB
@@ -152,37 +152,34 @@ React \textbullet{} Recoil \textbullet{} Next.js \\
 \runsubsection{African Price}
 \descript{| Freelance Developer }
 \location{May 2020 - Jul 2020}
-\vspace{\topsep} % Hacky fix for awkward extra vertical space
 \begin{tightemize}
-\item Designed the complete backend architecture of a Q\&A platform tailored for African countries. Designed and developed the frontend using React, Next.js
+\item Designed the complete backend architecture of a Q\&A platform. Developed the frontend using React, Next.js
+\item Implemented points \& reward system based on user activities.
+\item Implemented custom rich text library on top of DraftJs based on requirements for user post creation.
 \end{tightemize}
 
 \runsubsection{Kredent InfoEdge}
 \descript{| React Native Developer Intern }
 \location{Jan 2020 - Apr 2020}
-\vspace{\topsep} % Hacky fix for awkward extra vertical space
 \begin{tightemize}
-\item Developed a social media app for traders \& investors using using React Native,  Node.js,  Graphql,  TypeORM and PostgreSQL.
-\item Was actively involved in designing the schema and the backend system architecture.
+\item Developed a social media app for traders \& investors using React Native,  Node.js,  Graphql,  TypeORM and PostgreSQL.
+\item Was actively involved in designing the schema and the backend system architecture of the social platform that included features like feed, comment, block \& report.
 \end{tightemize}
 
 \runsubsection{Winsome IT Solutions}
 \descript{| Full Stack Javascript Developer }
 \location{Oct 2019 - Dec 2019}
-\vspace{\topsep} % Hacky fix for awkward extra vertical space
 \begin{tightemize}
-\item Developed the Winsome Official Website, Callpay Website, and internal CRM of the organization
+\item Developed Winsome Website, Callpay Website \& internal CRM of Winsome
 \end{tightemize}
 
 \runsubsection{Dumanhill Technologies}
 \descript{| Web Developer Intern }
 \location{Feb 2019 - Apr 2019}
-\vspace{\topsep} % Hacky fix for awkward extra vertical space
 \begin{tightemize}
 \item Enhanced frontend of an online health monitoring app in Angular \& Bootstrap
 \item Developed the API of an e-commerce app using Node.js, Express and MongoDB. Features included OTP authentication and Payment Gateway integration
 \end{tightemize}
-\sectionsep
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %     PROJECTS
@@ -192,33 +189,28 @@ React \textbullet{} Recoil \textbullet{} Next.js \\
 
 \runsubsection{Shoonya Back Office}
 \descript{| Brokerage \& Analytics For Finvasia }
-\location{Dec 2021 - Jan 2021}
-\vspace{\topsep} % Hacky fix for awkward extra vertical space
-\sectionsep
-
-\runsubsection{MarkIt}
-\descript{| Github MD file generator form rich text }
-\location{Apr 2020 - May 2020}
-\vspace{\topsep} % Hacky fix for awkward extra vertical space
-\sectionsep
+\begin{tightemize}
+\item Implemented login using headless chrome, rendered orderbook data using D3.js to provide better insights about trading performance.
+\end{tightemize}
 
 \runsubsection{QuizBud}
 \descript{| Online Personality Quiz Maker to Share with Friends }
-\location{Nov 2019 - Dec 2019}
-\vspace{\topsep} % Hacky fix for awkward extra vertical space
-\sectionsep
+\begin{tightemize}
+\item Implemented session based shareable quiz links. Implemented admin panel to add questions of various categories.
+\end{tightemize}
 
 \runsubsection{War of Words}
 \descript{| Multiplayer Text Battle Web Game }
-\location{Apr 2019 - May 2019}
-\vspace{\topsep} % Hacky fix for awkward extra vertical space
-\sectionsep
+\begin{tightemize}
+\item Implemented Socket.io rooms \& GUID for realtime gameplay with private room functionality
+\end{tightemize}
 
 \runsubsection{Amazeing}
 \descript{| The Maze Game }
-\location{Aug 2019 - Oct 2019}
-\vspace{\topsep} % Hacky fix for awkward extra vertical space
-\sectionsep
+\begin{tightemize}
+\item Implemented recursive Backtracking algorithm to generate mazes of varying difficulty.
+\item Developed stack data structure to replace the default Javascript function call stack, to handle the large number of recursive operations
+\end{tightemize}
 
 \end{minipage} 
 \end{document}  \documentclass[]{article}
