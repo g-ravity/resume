@@ -1,7 +1,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Deedy - One Page Two Column Resume
 % LaTeX Template
-% Version 1.2 (16/9/2014)
+% Version 1.1 (30/4/2014)
 %
 % Original author:
 % Debarghya Das (http://debarghyadas.com)
@@ -17,13 +17,36 @@
 % operating system or comment the line out to use the default font.
 % 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+% TODO:
+% 1. Integrate biber/bibtex for article citation under publications.
+% 2. Figure out a smoother way for the document to flow onto the next page.
+% 3. Add styling information for a "Projects/Hacks" section.
+% 4. Add location/address information
+% 5. Merge OpenFont and MacFonts as a single sty with options.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% CHANGELOG:
+% v1.1:
+% 1. Fixed several compilation bugs with \renewcommand
+% 2. Got Open-source fonts (Windows/Linux support)
+% 3. Added Last Updated
+% 4. Move Title styling into .sty
+% 5. Commented .sty file.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Known Issues:
+% 1. Overflows onto second page if any column's contents are more than the
+% vertical limit
+% 2. Hacky space on the first bullet point on the second column.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\documentclass[]{resume}
-\usepackage{fancyhdr}
- 
-\pagestyle{fancy}
-\fancyhf{}
- 
+\documentclass[]{deedy-resume-openfont}
+
+
 \begin{document}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -39,7 +62,8 @@
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\namesection{Ravik}{Ganguly}{
+
+\namesection{Ravik}{Ganguly}{\\
 \href{mailto:theravikganguly@gmail.com}{theravikganguly@gmail.com} | 86971-55714
 }
 
@@ -52,73 +76,45 @@
 \begin{minipage}[t]{0.33\textwidth} 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%     EDUCATION
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\section{Education} 
-
-\subsection{JADAVPUR UNIVERSITY}
-\descript{Bachelor of Engineering,}
-\descript{Information Technology}
-\location{June 2020 | Kolkata, India}
-\location{ CGPA: 7 / 10}
-\sectionsep
-
-\subsection{Calcutta Public School}
-\descript{High School}
-\location{Grad. May 2016|  Kolkata, India}
-\location{ Percentage: 95.3\% }
-\sectionsep
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %     LINKS
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \section{Links} 
-Github:// \href{https://github.com/g-ravity}{\bf g-ravity} \\
-LinkedIn://  \href{https://www.linkedin.com/in/ravik-ganguly-515549137/}{\bf ravik-ganguly} \\
-Twitter://  \href{https://twitter.com/the_gravityguy}{\bf the\_gravityguy} \\
+LinkedIn://  \href{https://www.linkedin.com/in/ravik-ganguly-515549137/}{\custombold{ravik-ganguly}} \\
+Github:// \href{https://github.com/g-ravity}{\custombold{g-ravity}} \\
 \sectionsep
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %     COURSEWORK
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\section{Coursework}
-
+\section{Coursework} 
 \subsection{Undergraduate}
-Data Structures \& Algorithms \\
-Database Management Systems \\
-Operating Systems \\
+Data Structures and Algorithm \\
+Database Management System \\
+Operating System \\
 System Design \\
+Python \\
+C++ \\
 \sectionsep
-
-\subsection{Relevant Courses}
-\descript{Udemy}
-MongoDB - The Developer's Guide \textbullet{}
-Advanced React and Redux \textbullet{} \\
-Node.js : Advanced Concepts \textbullet{} \\
-Junior to Senior Web Developer Course \textbullet{}
-PostgreSQL: Complete Developer's Guide \textbullet{}
-Epic React \textbullet{}
-Grokking System Design Interview
+\subsection{Udemy}
+Advanced React and Redux \\
+Node.js: Advanced Concepts \\
+PostgreSQL: Complete Developer's Guide \\
+Grokking System Design Interview \\
+Docker and Kubernetes \\
 \sectionsep
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %     SKILLS
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \section{Skills}
 \subsection{Programming}
-\descript{General:}
- Server Side Programming \textbullet{} Algorithms \textbullet{} System Design \\
-\descript{Languages:}
-JavaScript \textbullet{}  Bash \\
-Typescript \textbullet{} Node\ \\
-\descript{Tools / Framework:}
-NodeJs \textbullet{} Express \textbullet{} MongoDB \\ 
-PostgreSQL \textbullet{} ElasticSearch \\
-React \textbullet{} Recoil \textbullet{} Next.js \\
+Javascript \textbullet{}  Python
+\textbullet{} Typescript  \textbullet{} \\
+Node.js \textbullet{} MongoDB \textbullet{}
+MySQL \\ \textbullet{} ElasticSearch \textbullet{}
+Bash \textbullet{} Docker \\ \textbullet{} AWS
+\textbullet{} Next.js
 \sectionsep
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -129,18 +125,33 @@ React \textbullet{} Recoil \textbullet{} Next.js \\
 
 \end{minipage} 
 \hfill
-\begin{minipage}[t]{0.66\textwidth}
+\begin{minipage}[t]{0.66\textwidth} 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%     Experience
+%     EXPERIENCE
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \section{Experience}
 
+\runsubsection{Railofy}
+\descript{| Software Engineer }
+\location{Feb 2022 - Present}
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}
+\item Developed and integrated scraper services for train data and live train status
+\item Development and ownership of pricing service which processes train availability data to display travel insurance offers to users
+\item Helped in resolving SEO issues, which resulted in our app being listed on 4th position for food delivery in train
+\item Planning and implementation of notification framework which includes whatsapp, email and push notifications via firebase
+\item Involved in the development of an entire train DB via scrape and paid api flows, which included train, class, quota and pnr data for machine learning models
+\item Revamped an existing scraper service to scrape thousands of PNR data every day, with fault tolerance, type safety and captcha bypass
+\item Developed WhatsApp PNR bot for pnr status, ordering food and other uses, which drives major traffic on our website
+\item Involved in integration of Railofy Travel Guarantee insurance on IRCTC
+\item Worked on infra development and platform monitoring using tools like Kafka, bullqueue, ELK stack, Grafana, ECS, S3, Docker and others
+\end{tightemize}
+
 \runsubsection{Yellow Class}
 \descript{| Fullstack SDE II }
-\location{Aug 2020 - Present}
-\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\location{Aug 2020 - Jan 2022}
 \begin{tightemize}
 \item Responsible for the complete development and maintenance of the admin panel of the platform.
 \item Improved response time of slow MongoDB queries by 50-80\%
@@ -166,50 +177,18 @@ React \textbullet{} Recoil \textbullet{} Next.js \\
 \item Was actively involved in designing the schema and the backend system architecture of the social platform that included features like feed, comment, block \& report.
 \end{tightemize}
 
-\runsubsection{Winsome IT Solutions}
-\descript{| Full Stack Javascript Developer }
-\location{Oct 2019 - Dec 2019}
-\begin{tightemize}
-\item Developed Winsome Website, Callpay Website \& internal CRM of Winsome
-\end{tightemize}
-
-\runsubsection{Dumanhill Technologies}
-\descript{| Web Developer Intern }
-\location{Feb 2019 - Apr 2019}
-\begin{tightemize}
-\item Enhanced frontend of an online health monitoring app in Angular \& Bootstrap
-\item Developed the API of an e-commerce app using Node.js, Express and MongoDB. Features included OTP authentication and Payment Gateway integration
-\end{tightemize}
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %     PROJECTS
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \section{Projects}
 
-\runsubsection{Shoonya Back Office}
-\descript{| Brokerage \& Analytics For Finvasia }
+\runsubsection{Options Trading Automation}
 \begin{tightemize}
-\item Implemented login using headless chrome, rendered orderbook data using D3.js to provide better insights about trading performance.
-\end{tightemize}
-
-\runsubsection{QuizBud}
-\descript{| Online Personality Quiz Maker to Share with Friends }
-\begin{tightemize}
-\item Implemented session based shareable quiz links. Implemented admin panel to add questions of various categories.
-\end{tightemize}
-
-\runsubsection{War of Words}
-\descript{| Multiplayer Text Battle Web Game }
-\begin{tightemize}
-\item Implemented Socket.io rooms \& GUID for realtime gameplay with private room functionality
-\end{tightemize}
-
-\runsubsection{Amazeing}
-\descript{| The Maze Game }
-\begin{tightemize}
-\item Implemented recursive Backtracking algorithm to generate mazes of varying difficulty.
-\item Developed stack data structure to replace the default Javascript function call stack, to handle the large number of recursive operations
+\item Integrated Lorentzian Classification algo for automating entry
+\item Integrated mail listener in trading for automated webhook alerts
+\item Developed and implemented exit strategy based on a number of factors like price velocity, candlestick patterns and others
+\item Integrated Grafana and Loki for logging and observability
 \end{tightemize}
 
 \end{minipage} 
