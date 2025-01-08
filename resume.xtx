@@ -84,37 +84,56 @@ LinkedIn://  \href{https://www.linkedin.com/in/ravik-ganguly-515549137/}{\custom
 Github:// \href{https://github.com/g-ravity}{\custombold{g-ravity}} \\
 \sectionsep
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%     COURSEWORK
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Coursework} 
-\subsection{Undergraduate}
-Data Structures and Algorithm \\
-Database Management System \\
-Operating System \\
-System Design \\
-Python \\
-C++ \\
-\sectionsep
-\subsection{Udemy}
-Advanced React and Redux \\
-Node.js: Advanced Concepts \\
-PostgreSQL: Complete Developer's Guide \\
-Grokking System Design Interview \\
-Docker and Kubernetes \\
-\sectionsep
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% %     COURSEWORK
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% \section{Coursework} 
+% \subsection{Undergraduate}
+% Data Structures and Algorithm \\
+% Database Management System \\
+% Operating System \\
+% System Design \\
+% Python \\
+% C++ \\
+% \sectionsep
+% \subsection{Udemy}
+% Advanced React and Redux \\
+% Node.js: Advanced Concepts \\
+% PostgreSQL: Complete Developer's Guide \\
+% Grokking System Design Interview \\
+% Docker and Kubernetes \\
+% \sectionsep
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %     SKILLS
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \section{Skills}
-\subsection{Programming}
+\subsection{Languages}
 Javascript \textbullet{}  Python
-\textbullet{} Typescript  \textbullet{} \\
-Node.js \textbullet{} MongoDB \textbullet{}
-MySQL \\ \textbullet{} ElasticSearch \textbullet{}
-Bash \textbullet{} Docker \\ \textbullet{} AWS
-\textbullet{} Next.js
+\textbullet{} Typescript
+\sectionsep
+\subsection{Front-End}
+HTML \textbullet{}  CSS
+\textbullet{} React \textbullet{} Next.js
+\sectionsep
+\subsection{Back-End}
+Node.js \textbullet{}  GraphQL
+\textbullet{} ExpressJS
+\sectionsep
+\subsection{Databases}
+MySQL \textbullet{} PostgreSQL \textbullet{} MongoDB\\ Redis \textbullet{} ElasticSearch
+\sectionsep
+\subsection{Mobile}
+React Native
+\sectionsep
+\subsection{Cloud}
+AWS \textbullet{} Google Cloud Platform
+\sectionsep
+\subsection{DevOps}
+Git \textbullet{} Docker \textbullet{} Kubernetes\\ Jenkins \textbullet{} Grafana \textbullet{} ELK \\ Bash \textbullet{} Sentry
+\sectionsep
+\subsection{Tools}
+Kafka \textbullet{} RabbitMQ \textbullet{} Jest
 \sectionsep
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -133,25 +152,39 @@ Bash \textbullet{} Docker \\ \textbullet{} AWS
 
 \section{Experience}
 
+\runsubsection{Dhan Yojana}
+\descript{| Freelance Engineering Project }
+\location{July 2024 - Present}
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}
+\item Architected a full-scale algorithmic trading system in TypeScript/Node.js for parallel execution of multiple strategies across multiple trading accounts
+\item Built Shield, a robust Typescript package, by porting NorenApi-js library with enhanced type safety, error handling, API retries, and logging capabilities
+\item Engineered Hermes, a high-performance event service processing 900-1000 events/minute with guaranteed order execution in Node.js
+\item Developed Plotchart, a comprehensive backtesting platform for trading strategies with configurable parameters and interactive visualizations
+\item Implemented a Telegram bot for complete algo management including real-time monitoring, risk management, and system configuration
+\item Implemented a CI/CD pipeline on GCP for automated deployment, incorporating GitHub integration and Compute Engine resources
+\item Built modular microservices for strategy signals, risk management, trade execution, and order management
+\end{tightemize}
+
 \runsubsection{Railofy}
 \descript{| Software Engineer }
-\location{Feb 2022 - Present}
+\location{Feb 2022 - June 2024 \textbullet{} railofy.com}
 \vspace{\topsep} % Hacky fix for awkward extra vertical space
 \begin{tightemize}
 \item Developed and integrated scraper services for train data and live train status
 \item Development and ownership of pricing service which processes train availability data to display travel insurance offers to users
 \item Helped in resolving SEO issues, which resulted in our app being listed on 4th position for food delivery in train
 \item Planning and implementation of notification framework which includes whatsapp, email and push notifications via firebase
-\item Involved in the development of an entire train DB via scrape and paid api flows, which included train, class, quota and pnr data for machine learning models
-\item Revamped an existing scraper service to scrape thousands of PNR data every day, with fault tolerance, type safety and captcha bypass
-\item Developed WhatsApp PNR bot for pnr status, ordering food and other uses, which drives major traffic on our website
+\item Involved in the development of an entire database for train data via scrape and paid api flows, which included train, class, quota and PNR data for machine learning models
+\item Revamped an existing scraper service to scrape thousands of PNR data every day, with fault tolerance, type safety, IP rotation and google captcha bypass
+\item Developed WhatsApp PNR bot for PNR status, ordering food and other uses, which drives major traffic on our website
 \item Involved in integration of Railofy Travel Guarantee insurance on IRCTC
 \item Worked on infra development and platform monitoring using tools like Kafka, bullqueue, ELK stack, Grafana, ECS, S3, Docker and others
 \end{tightemize}
 
 \runsubsection{Yellow Class}
 \descript{| Fullstack SDE II }
-\location{Aug 2020 - Jan 2022}
+\location{Aug 2020 - Jan 2022 \textbullet{} yellowclass.com}
 \begin{tightemize}
 \item Responsible for the complete development and maintenance of the admin panel of the platform.
 \item Improved response time of slow MongoDB queries by 50-80\%
@@ -165,31 +198,22 @@ Bash \textbullet{} Docker \\ \textbullet{} AWS
 \location{May 2020 - Jul 2020}
 \begin{tightemize}
 \item Designed the complete backend architecture of a Q\&A platform. Developed the frontend using React, Next.js
-\item Implemented points \& reward system based on user activities.
-\item Implemented custom rich text library on top of DraftJs based on requirements for user post creation.
+\item Implemented custom rich text library on top of DraftJs based on requirements for user post creation. Implemented points \& rewards system.
 \end{tightemize}
 
-\runsubsection{Kredent InfoEdge}
-\descript{| React Native Developer Intern }
-\location{Jan 2020 - Apr 2020}
-\begin{tightemize}
-\item Developed a social media app for traders \& investors using React Native,  Node.js,  Graphql,  TypeORM and PostgreSQL.
-\item Was actively involved in designing the schema and the backend system architecture of the social platform that included features like feed, comment, block \& report.
-\end{tightemize}
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% %     PROJECTS
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%     PROJECTS
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% \section{Projects}
 
-\section{Projects}
-
-\runsubsection{Options Trading Automation}
-\begin{tightemize}
-\item Integrated Lorentzian Classification algo for automating entry
-\item Integrated mail listener in trading for automated webhook alerts
-\item Developed and implemented exit strategy based on a number of factors like price velocity, candlestick patterns and others
-\item Integrated Grafana and Loki for logging and observability
-\end{tightemize}
+% \runsubsection{Options Trading Automation}
+% \begin{tightemize}
+% \item Integrated Lorentzian Classification algo for automating entry
+% \item Integrated mail listener in trading for automated webhook alerts
+% \item Developed and implemented exit strategy based on a number of factors like price velocity, candlestick patterns and others
+% \item Integrated Grafana and Loki for logging and observability
+% \end{tightemize}
 
 \end{minipage} 
 \end{document}  \documentclass[]{article}
