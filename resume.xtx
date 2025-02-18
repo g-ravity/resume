@@ -64,7 +64,7 @@
 
 
 \namesection{Ravik}{Ganguly}{\\
-\href{mailto:theravikganguly@gmail.com}{theravikganguly@gmail.com} | 86971-55714
+\href{mailto:theravikganguly@gmail.com}{theravikganguly@gmail.com} | \href{https://rb.gy/noy6kn}{https://rb.gy/noy6k} | 86971-55714
 }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -168,7 +168,7 @@ Kafka \textbullet{} RabbitMQ \textbullet{} Jest
 
 \runsubsection{Railofy}
 \descript{| Software Engineer }
-\location{Feb 2022 - June 2024 \textbullet{} railofy.com}
+\location{Feb 2022 - June 2024 \textbullet{} \href{https://railofy.com}{railofy.com}}
 \vspace{\topsep} % Hacky fix for awkward extra vertical space
 \begin{tightemize}
 \item Developed and integrated scraper services for train data and live train status
@@ -184,7 +184,7 @@ Kafka \textbullet{} RabbitMQ \textbullet{} Jest
 
 \runsubsection{Yellow Class}
 \descript{| Fullstack SDE II }
-\location{Aug 2020 - Jan 2022 \textbullet{} yellowclass.com}
+\location{Aug 2020 - Jan 2022 \textbullet{} \href{https://yellowclass.com}{yellowclass.com}}
 \begin{tightemize}
 \item Responsible for the complete development and maintenance of the admin panel of the platform.
 \item Improved response time of slow MongoDB queries by 50-80\%
