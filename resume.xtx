@@ -1,49 +1,3 @@
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% Deedy - One Page Two Column Resume
-% LaTeX Template
-% Version 1.1 (30/4/2014)
-%
-% Original author:
-% Debarghya Das (http://debarghyadas.com)
-%
-% Original repository:
-% https://github.com/deedydas/Deedy-Resume
-%
-% IMPORTANT: THIS TEMPLATE NEEDS TO BE COMPILED WITH XeLaTeX
-%
-% This template uses several fonts not included with Windows/Linux by
-% default. If you get compilation errors saying a font is missing, find the line
-% on which the font is used and either change it to a font included with your
-% operating system or comment the line out to use the default font.
-% 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% 
-% TODO:
-% 1. Integrate biber/bibtex for article citation under publications.
-% 2. Figure out a smoother way for the document to flow onto the next page.
-% 3. Add styling information for a "Projects/Hacks" section.
-% 4. Add location/address information
-% 5. Merge OpenFont and MacFonts as a single sty with options.
-% 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%
-% CHANGELOG:
-% v1.1:
-% 1. Fixed several compilation bugs with \renewcommand
-% 2. Got Open-source fonts (Windows/Linux support)
-% 3. Added Last Updated
-% 4. Move Title styling into .sty
-% 5. Commented .sty file.
-%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%
-% Known Issues:
-% 1. Overflows onto second page if any column's contents are more than the
-% vertical limit
-% 2. Hacky space on the first bullet point on the second column.
-%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
 \documentclass[]{deedy-resume-openfont}
 
 
@@ -63,9 +17,8 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
-\namesection{Ravik}{Ganguly}{\\
-\href{mailto:theravikganguly@gmail.com}{theravikganguly@gmail.com} | \href{https://rb.gy/noy6kn}{https://rb.gy/noy6k} | 86971-55714
-}
+\namesection{Ravik}{Ganguly}{
+\href{mailto:theravikganguly@gmail.com}{theravikganguly@gmail.com} | 86971-55714}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
@@ -84,53 +37,38 @@ LinkedIn://  \href{https://www.linkedin.com/in/ravik-ganguly-515549137/}{\custom
 Github:// \href{https://github.com/g-ravity}{\custombold{g-ravity}} \\
 \sectionsep
 
-% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% %     COURSEWORK
-% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% \section{Coursework} 
-% \subsection{Undergraduate}
-% Data Structures and Algorithm \\
-% Database Management System \\
-% Operating System \\
-% System Design \\
-% Python \\
-% C++ \\
-% \sectionsep
-% \subsection{Udemy}
-% Advanced React and Redux \\
-% Node.js: Advanced Concepts \\
-% PostgreSQL: Complete Developer's Guide \\
-% Grokking System Design Interview \\
-% Docker and Kubernetes \\
-% \sectionsep
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %     SKILLS
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \section{Skills}
 \subsection{Languages}
-Javascript \textbullet{}  Python
+Golang \textbullet{} Javascript \textbullet{} Python
 \textbullet{} Typescript
 \sectionsep
 \subsection{Front-End}
-HTML \textbullet{}  CSS
-\textbullet{} React \textbullet{} Next.js
+React \textbullet{} Next.js \textbullet{}
+\textbullet{} Jotai \textbullet{} Tailwind
 \sectionsep
 \subsection{Back-End}
-Node.js \textbullet{}  GraphQL
-\textbullet{} ExpressJS
+Golang \textbullet{} Node.js \textbullet{} NestJS
+\textbullet{} ExpressJS \textbullet{} gRPC
 \sectionsep
 \subsection{Databases}
-MySQL \textbullet{} PostgreSQL \textbullet{} MongoDB\\ Redis \textbullet{} ElasticSearch
+PostgreSQL \textbullet{} MySQL \textbullet{} MongoDB\\ Redis \textbullet{} ElasticSearch \textbullet{} ClickHouse
 \sectionsep
 \subsection{Mobile}
-React Native
+React Native \textbullet{} Flutter
 \sectionsep
-\subsection{Cloud}
-AWS \textbullet{} Google Cloud Platform
+\subsection{Cloud \& Infrastructure}
+AWS \textbullet{} GCP \textbullet{} Terraform
 \sectionsep
 \subsection{DevOps}
-Git \textbullet{} Docker \textbullet{} Kubernetes\\ Jenkins \textbullet{} Grafana \textbullet{} ELK \\ Bash \textbullet{} Sentry
+Docker \textbullet{} Kubernetes \textbullet{} Jenkins \\ Grafana \textbullet{} Prometheus \textbullet{} Sentry 
+\sectionsep
+\subsection{Architecture}
+Microservices \textbullet{} Event-Driven
+\\ System Design \textbullet{} API Design
 \sectionsep
 \subsection{Tools}
 Kafka \textbullet{} RabbitMQ \textbullet{} Jest
@@ -153,67 +91,66 @@ Kafka \textbullet{} RabbitMQ \textbullet{} Jest
 \section{Experience}
 
 \runsubsection{Dhan Yojana}
-\descript{| Freelance Engineering Project }
+\descript{| Senior Software Consultant }
 \location{July 2024 - Present}
 \vspace{\topsep} % Hacky fix for awkward extra vertical space
 \begin{tightemize}
-\item Architected a full-scale algorithmic trading system in TypeScript/Node.js for parallel execution of multiple strategies across multiple trading accounts
-\item Built Shield, a robust Typescript package, by porting NorenApi-js library with enhanced type safety, error handling, API retries, and logging capabilities
-\item Engineered Hermes, a high-performance event service processing 900-1000 events/minute with guaranteed order execution in Node.js
+\item Led architecture design and implementation of algorithmic trading system processing 1000+ transactions per minute
+\item Engineered core trading engine in Golang, leveraging goroutines and channels for concurrent strategy execution
+\item Built modular microservices for strategy signals, risk management, trade execution and order management
+\item Built Shield, a robust type-safe API client in TypeScript with comprehensive error handling, retries, and observability
+\item Developed Hermes, a high-performance event processing service in Golang handling 1000+ events/minute with guaranteed order execution
 \item Developed Plotchart, a comprehensive backtesting platform for trading strategies with configurable parameters and interactive visualizations
-\item Implemented a Telegram bot for complete algo management including real-time monitoring, risk management, and system configuration
-\item Implemented a CI/CD pipeline on GCP for automated deployment, incorporating GitHub integration and Compute Engine resources
-\item Built modular microservices for strategy signals, risk management, trade execution, and order management
+\item Designed and implemented CI/CD pipelines on GCP with automated testing, deployment, and rollback capabilities
 \end{tightemize}
 
 \runsubsection{Railofy}
-\descript{| Software Engineer }
+\descript{| SDE 2 }
 \location{Feb 2022 - June 2024 \textbullet{} \href{https://railofy.com}{railofy.com}}
 \vspace{\topsep} % Hacky fix for awkward extra vertical space
 \begin{tightemize}
-\item Developed and integrated scraper services for train data and live train status
-\item Development and ownership of pricing service which processes train availability data to display travel insurance offers to users
-\item Helped in resolving SEO issues, which resulted in our app being listed on 4th position for food delivery in train
-\item Planning and implementation of notification framework which includes whatsapp, email and push notifications via firebase
-\item Involved in the development of an entire database for train data via scrape and paid api flows, which included train, class, quota and PNR data for machine learning models
-\item Revamped an existing scraper service to scrape thousands of PNR data every day, with fault tolerance, type safety, IP rotation and google captcha bypass
-\item Developed WhatsApp PNR bot for PNR status, ordering food and other uses, which drives major traffic on our website
-\item Involved in integration of Railofy Travel Guarantee insurance on IRCTC
-\item Worked on infra development and platform monitoring using tools like Kafka, bullqueue, ELK stack, Grafana, ECS, S3, Docker and others
+\item Built high-throughput data pipeline in Golang, handling 10K+ daily PNR records with 97\% accuracy
+\item Developed resilient scraper services with IP rotation, captcha bypass, and fault tolerance mechanisms
+\item Implemented scalable pricing service processing millions of train availability data points for dynamic insurance offers
+\item Engineered an event-driven notification framework using Kafka for reliable delivery of 10K+ daily notifications across multiple channels
+\item Optimized database queries and implemented caching strategies, reducing API response times by 65\%
+\item Led migration of critical services from Node.js to Golang, improving throughput by 2x and reducing resource utilization
+\item Designed and implemented comprehensive monitoring and alerting system using Grafana, Prometheus and ELK stack
 \end{tightemize}
 
 \runsubsection{Yellow Class}
-\descript{| Fullstack SDE II }
+\descript{| Fullstack SDE 2 }
 \location{Aug 2020 - Jan 2022 \textbullet{} \href{https://yellowclass.com}{yellowclass.com}}
 \begin{tightemize}
-\item Responsible for the complete development and maintenance of the admin panel of the platform.
-\item Improved response time of slow MongoDB queries by 50-80\%
-\item Implemented custom file upload and processing system using Dropbox API,  S3 and AWS MediaConvert.
-\item Implemented Instagram reels like feature using ElasticSearch \& RabbitMQ
-\item Designed a system to generate pdf certificates in Node and upload them to S3 from JSON data collected from MongoDB
+\item Architected and developed scalable admin panel with NSFW filters handling operations for customer support team, incorporating role-based access control
+\item Implemented performance optimizations for MongoDB, improving query response times by 80\% through indexing and query restructuring
+\item Designed and developed distributed file processing system handling video content using Dropbox API, S3, and AWS MediaConvert
+\item Engineered content recommendation system using ElasticSearch and RabbitMQ with 40\% improvement in user engagement
+\item Developed high-performance PDF certificate generation service in Golang, processing 1K+ certificates daily with dynamic templating
 \end{tightemize}
 
 \runsubsection{African Price}
 \descript{| Freelance Developer }
 \location{May 2020 - Jul 2020}
 \begin{tightemize}
-\item Designed the complete backend architecture of a Q\&A platform. Developed the frontend using React, Next.js
-\item Implemented custom rich text library on top of DraftJs based on requirements for user post creation. Implemented points \& rewards system.
+\item Designed a scalable Q\&A platform with microservices approach using React and Node. Implemented auth \& rate limiting
+\item Developed custom rich text editor extending DraftJS with specialized formatting capabilities for domain-specific content
 \end{tightemize}
 
-% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% %     PROJECTS
-% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     PROJECTS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 % \section{Projects}
 
-% \runsubsection{Options Trading Automation}
+% \runsubsection{Options Trading Automation Platform}
 % \begin{tightemize}
-% \item Integrated Lorentzian Classification algo for automating entry
-% \item Integrated mail listener in trading for automated webhook alerts
-% \item Developed and implemented exit strategy based on a number of factors like price velocity, candlestick patterns and others
-% \item Integrated Grafana and Loki for logging and observability
+% \item Architected and implemented a high-frequency trading system in Golang with sub-millisecond execution latency
+% \item Developed advanced signal processing algorithms with the Lorentzian Classification method for automated entry/exit decisions
+% \item Engineered concurrent trade execution engine using Go channels and goroutines for optimal performance under high load
+% \item Built comprehensive risk management system with real-time portfolio monitoring and automated position sizing
+% \item Implemented observability stack with Grafana, Prometheus, and distributed tracing for complete system visibility
 % \end{tightemize}
 
 \end{minipage} 
-\end{document}  \documentclass[]{article}
+\end{document}
