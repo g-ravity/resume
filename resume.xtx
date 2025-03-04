@@ -47,12 +47,12 @@ Golang \textbullet{} Javascript \textbullet{} Python
 \textbullet{} Typescript
 \sectionsep
 \subsection{Front-End}
-React \textbullet{} Next.js \textbullet{}
+React \textbullet{} Next.js
 \textbullet{} Jotai \textbullet{} Tailwind
 \sectionsep
 \subsection{Back-End}
-Golang \textbullet{} Node.js \textbullet{} NestJS
-\textbullet{} ExpressJS \textbullet{} gRPC
+Golang \textbullet{} Node.js \textbullet{} NestJS \\
+ExpressJS \textbullet{} gRPC
 \sectionsep
 \subsection{Databases}
 PostgreSQL \textbullet{} MySQL \textbullet{} MongoDB\\ Redis \textbullet{} ElasticSearch \textbullet{} ClickHouse
