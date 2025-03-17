@@ -35,6 +35,27 @@
 \section{Links} 
 LinkedIn://  \href{https://www.linkedin.com/in/ravik-ganguly-515549137/}{\custombold{ravik-ganguly}} \\
 Github:// \href{https://github.com/g-ravity}{\custombold{g-ravity}} \\
+Twitter:// \href{https://x.com/the_gravityguy}{\custombold{the\_gravityguy}} \\
+Blogs:// \href{https://medium.com/@ravikganguly}{\custombold{@ravikganguly}} \\
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EDUCATION
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Education} 
+
+\subsection{JADAVPUR UNIVERSITY}
+\descript{Bachelor of Engineering,}
+\descript{Information Technology}
+\location{June 2020 | Kolkata, India}
+\location{ CGPA: 7 / 10}
+\sectionsep
+
+\subsection{Calcutta Public School}
+\descript{High School}
+\location{Grad. May 2016|  Kolkata, India}
+\location{ Percentage: 95.3\% }
 \sectionsep
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -91,17 +112,17 @@ Kafka \textbullet{} RabbitMQ \textbullet{} Jest
 \section{Experience}
 
 \runsubsection{Dhan Yojana}
-\descript{| Senior Software Consultant }
-\location{July 2024 - Present}
+\descript{| Founder \& Lead Developer }
+\location{July 2024 - Feb 2025}
 \vspace{\topsep} % Hacky fix for awkward extra vertical space
 \begin{tightemize}
-\item Led architecture design and implementation of algorithmic trading system processing 1000+ transactions per minute
+\item Led architecture design and implementation of proprietary algorithmic trading system processing 1000+ transactions per minute
 \item Engineered core trading engine in Golang, leveraging goroutines and channels for concurrent strategy execution
 \item Built modular microservices for strategy signals, risk management, trade execution and order management
 \item Built Shield, a robust type-safe API client in TypeScript with comprehensive error handling, retries, and observability
 \item Developed Hermes, a high-performance event processing service in Golang handling 1000+ events/minute with guaranteed order execution
 \item Developed Plotchart, a comprehensive backtesting platform for trading strategies with configurable parameters and interactive visualizations
-\item Designed and implemented CI/CD pipelines on GCP with automated testing, deployment, and rollback capabilities
+\item Designed and implemented CI/CD pipelines on AWS with automated testing, deployment, and rollback capabilities
 \end{tightemize}
 
 \runsubsection{Railofy}
