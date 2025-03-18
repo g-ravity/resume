@@ -33,10 +33,10 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \section{Links} 
-LinkedIn://  \href{https://www.linkedin.com/in/ravik-ganguly-515549137/}{\custombold{ravik-ganguly}} \\
-Github:// \href{https://github.com/g-ravity}{\custombold{g-ravity}} \\
-Twitter:// \href{https://x.com/the_gravityguy}{\custombold{the\_gravityguy}} \\
-Blogs:// \href{https://medium.com/@ravikganguly}{\custombold{@ravikganguly}} \\
+LinkedIn: \href{https://www.linkedin.com/in/ravik-ganguly-515549137/}{\custombold{ravik-ganguly}} \\
+Github: \href{https://github.com/g-ravity}{\custombold{g-ravity}} \\
+Twitter: \href{https://x.com/the_gravityguy}{\custombold{the\_gravityguy}} \\
+Blogs: \href{https://medium.com/@ravikganguly}{\custombold{@ravikganguly}} \\
 \sectionsep
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -54,7 +54,7 @@ Blogs:// \href{https://medium.com/@ravikganguly}{\custombold{@ravikganguly}} \\
 
 \subsection{Calcutta Public School}
 \descript{High School}
-\location{Grad. May 2016|  Kolkata, India}
+\location{Grad. May 2016 | Kolkata, India}
 \location{ Percentage: 95.3\% }
 \sectionsep
 
@@ -64,36 +64,41 @@ Blogs:// \href{https://medium.com/@ravikganguly}{\custombold{@ravikganguly}} \\
 
 \section{Skills}
 \subsection{Languages}
-Golang \textbullet{} Javascript \textbullet{} Python
-\textbullet{} Typescript
+Golang - Javascript - Python - Typescript
 \sectionsep
 \subsection{Front-End}
-React \textbullet{} Next.js
-\textbullet{} Jotai \textbullet{} Tailwind
+React - Next.js - Jotai - Tailwind
 \sectionsep
 \subsection{Back-End}
-Golang \textbullet{} Node.js \textbullet{} NestJS \\
-ExpressJS \textbullet{} gRPC
+Golang - Node.js - NestJS - ExpressJS - gRPC
 \sectionsep
 \subsection{Databases}
-PostgreSQL \textbullet{} MySQL \textbullet{} MongoDB\\ Redis \textbullet{} ElasticSearch \textbullet{} ClickHouse
+PostgreSQL - MySQL - MongoDB - Redis - ElasticSearch - ClickHouse
 \sectionsep
 \subsection{Mobile}
-React Native \textbullet{} Flutter
+React Native - Flutter
 \sectionsep
 \subsection{Cloud \& Infrastructure}
-AWS \textbullet{} GCP \textbullet{} Terraform
+AWS - GCP - Terraform
 \sectionsep
 \subsection{DevOps}
-Docker \textbullet{} Kubernetes \textbullet{} Jenkins \\ Grafana \textbullet{} Prometheus \textbullet{} Sentry 
+Docker - Kubernetes - Jenkins - Grafana - Prometheus - Sentry 
 \sectionsep
 \subsection{Architecture}
-Microservices \textbullet{} Event-Driven
-\\ System Design \textbullet{} API Design
+Microservices - Event-Driven - System Design - API Design
 \sectionsep
 \subsection{Tools}
-Kafka \textbullet{} RabbitMQ \textbullet{} Jest
+Kafka - RabbitMQ - Jest
 \sectionsep
+
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     PROJECTS
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Projects}
+
+\descript{\href{https://github.com/g-ravity/glitch-art}{Glitch Art Generator}}
+\descript{\href{https://github.com/g-ravity/terminal\_blackjack}{Terminal Blackjack}}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
@@ -112,8 +117,8 @@ Kafka \textbullet{} RabbitMQ \textbullet{} Jest
 \section{Experience}
 
 \runsubsection{Dhan Yojana}
-\descript{| Founder \& Lead Developer }
-\location{July 2024 - Feb 2025}
+\descript{- Founder \& CTO }
+\location{July 2024 - February 2025}
 \vspace{\topsep} % Hacky fix for awkward extra vertical space
 \begin{tightemize}
 \item Led architecture design and implementation of proprietary algorithmic trading system processing 1000+ transactions per minute
@@ -126,9 +131,8 @@ Kafka \textbullet{} RabbitMQ \textbullet{} Jest
 \end{tightemize}
 
 \runsubsection{Railofy}
-\descript{| SDE 2 }
-\location{Feb 2022 - June 2024 \textbullet{} \href{https://railofy.com}{railofy.com}}
-\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\descript{- Software Development Engineer 2 }
+\location{February 2022 - June 2024 - \href{https://railofy.com}{railofy.com}}
 \begin{tightemize}
 \item Built high-throughput data pipeline in Golang, handling 10K+ daily PNR records with 97\% accuracy
 \item Developed resilient scraper services with IP rotation, captcha bypass, and fault tolerance mechanisms
@@ -140,8 +144,8 @@ Kafka \textbullet{} RabbitMQ \textbullet{} Jest
 \end{tightemize}
 
 \runsubsection{Yellow Class}
-\descript{| Fullstack SDE 2 }
-\location{Aug 2020 - Jan 2022 \textbullet{} \href{https://yellowclass.com}{yellowclass.com}}
+\descript{- Fullstack Software Developer 2 }
+\location{August 2020 - January 2022 - \href{https://yellowclass.com}{yellowclass.com}}
 \begin{tightemize}
 \item Architected and developed scalable admin panel with NSFW filters handling operations for customer support team, incorporating role-based access control
 \item Implemented performance optimizations for MongoDB, improving query response times by 80\% through indexing and query restructuring
@@ -151,27 +155,12 @@ Kafka \textbullet{} RabbitMQ \textbullet{} Jest
 \end{tightemize}
 
 \runsubsection{African Price}
-\descript{| Freelance Developer }
-\location{May 2020 - Jul 2020}
+\descript{- Freelance Developer }
+\location{May 2020 - July 2020}
 \begin{tightemize}
 \item Designed a scalable Q\&A platform with microservices approach using React and Node. Implemented auth \& rate limiting
 \item Developed custom rich text editor extending DraftJS with specialized formatting capabilities for domain-specific content
 \end{tightemize}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%     PROJECTS
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-% \section{Projects}
-
-% \runsubsection{Options Trading Automation Platform}
-% \begin{tightemize}
-% \item Architected and implemented a high-frequency trading system in Golang with sub-millisecond execution latency
-% \item Developed advanced signal processing algorithms with the Lorentzian Classification method for automated entry/exit decisions
-% \item Engineered concurrent trade execution engine using Go channels and goroutines for optimal performance under high load
-% \item Built comprehensive risk management system with real-time portfolio monitoring and automated position sizing
-% \item Implemented observability stack with Grafana, Prometheus, and distributed tracing for complete system visibility
-% \end{tightemize}
 
 \end{minipage} 
 \end{document}
