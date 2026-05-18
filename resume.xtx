@@ -1,36 +1,13 @@
 \documentclass[]{deedy-resume-openfont}
 
-
 \begin{document}
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%
-%     LAST UPDATED DATE
-%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \lastupdated
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%
-%     TITLE NAME
-%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
 
 \namesection{Ravik}{Ganguly}{
 \href{mailto:theravikganguly@gmail.com}{theravikganguly@gmail.com} | 86971-55714}
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%
-%     COLUMN ONE
-%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
 \begin{minipage}[t]{0.33\textwidth} 
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%     LINKS
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \section{Links} 
 LinkedIn: \href{https://www.linkedin.com/in/ravik-ganguly-515549137/}{\custombold{ravik-ganguly}} \\
@@ -39,127 +16,91 @@ Twitter: \href{https://x.com/the_gravityguy}{\custombold{the\_gravityguy}} \\
 Blogs: \href{https://medium.com/@ravikganguly}{\custombold{@ravikganguly}} \\
 \sectionsep
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%     EDUCATION
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
 \section{Education} 
 
 \subsection{JADAVPUR UNIVERSITY}
-\descript{Bachelor of Engineering,}
-\descript{Information Technology}
+\descript{Bachelor of Engineering, Information Technology}
 \location{June 2020 | Kolkata, India}
-\location{ CGPA: 7 / 10}
+\location{CGPA: 7 / 10}
 \sectionsep
 
 \subsection{Calcutta Public School}
 \descript{High School}
-\location{Grad. May 2016 | Kolkata, India}
-\location{ Percentage: 95.3\% }
+\location{May 2016 | Kolkata, India}
+\location{95.3\%}
 \sectionsep
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%     SKILLS
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \section{Skills}
 \subsection{Languages}
-Golang - Javascript - Python - Typescript
+Typescript - Javascript - Python - Golang
 \sectionsep
 \subsection{Front-End}
-React - Next.js - Jotai - Tailwind
+React - Next.js - Tailwind
 \sectionsep
 \subsection{Back-End}
-Golang - Node.js - NestJS - ExpressJS - gRPC
+Node.js - NestJS - gRPC - Golang
 \sectionsep
 \subsection{Databases}
-PostgreSQL - MySQL - MongoDB - Redis - ElasticSearch - ClickHouse
+PostgreSQL - MongoDB - Redis - ElasticSearch - ClickHouse
 \sectionsep
-\subsection{Mobile}
-React Native - Flutter
-\sectionsep
-\subsection{Cloud \& Infrastructure}
-AWS - GCP - Terraform
+\subsection{Cloud \& Infra}
+AWS - GCP
 \sectionsep
 \subsection{DevOps}
-Docker - Kubernetes - Jenkins - Grafana - Prometheus - Sentry 
+Docker - Kubernetes - Jenkins - Grafana - Prometheus
 \sectionsep
 \subsection{Architecture}
-Microservices - Event-Driven - System Design - API Design
+Microservices - Event-Driven - System Design
 \sectionsep
 \subsection{Tools}
 Kafka - RabbitMQ - Jest
 \sectionsep
 
-% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%     PROJECTS
-% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\section{Projects}
-
-\descript{\href{https://github.com/g-ravity/glitch-art}{Glitch Art Generator}}
-\descript{\href{https://github.com/g-ravity/terminal\_blackjack}{Terminal Blackjack}}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%
-%     COLUMN TWO
-%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
 \end{minipage} 
 \hfill
 \begin{minipage}[t]{0.66\textwidth} 
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%     EXPERIENCE
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
 \section{Experience}
 
+\runsubsection{Convosight}
+\descript{- Senior Software Engineer }
+\location{March 2025 - Present}
+\begin{tightemize}\\[10pt]
+\item Led end-to-end development of \textbf{Persona}, a core product used by large enterprise clients; collaborated with PM and led FE + QA to deliver production-grade features
+\item Built \textbf{Aria}, an AI-powered social research insights platform using LangGraph agents for automated insight generation from large-scale social data
+\item Designed and implemented scalable \textbf{data ingestion pipelines} to onboard branded profiles and high-volume social media posts
+\item Developed internal tools to \textbf{detect and track brand crisis trends} from ingested data, enabling weekly actionable insights for clients
+\item Improved product reliability and data processing efficiency through structured pipelines and observability enhancements
+\end{tightemize}
+
 \runsubsection{Dhan Yojana}
-\descript{- Founder \& CTO }
+\descript{- Core Engineer }
 \location{July 2024 - February 2025}
-\vspace{\topsep} % Hacky fix for awkward extra vertical space
 \begin{tightemize}
-\item Led architecture design and implementation of proprietary algorithmic trading system processing 1000+ transactions per minute
-\item Engineered core trading engine in Golang, leveraging goroutines and channels for concurrent strategy execution
-\item Built modular microservices for strategy signals, risk management, trade execution and order management
-\item Built Shield, a robust type-safe API client in TypeScript with comprehensive error handling, retries, and observability
-\item Developed Hermes, a high-performance event processing service in Golang handling 1000+ events/minute with guaranteed order execution
-\item Developed Plotchart, a comprehensive backtesting platform for trading strategies with configurable parameters and interactive visualizations
-\item Designed and implemented CI/CD pipelines on AWS with automated testing, deployment, and rollback capabilities
+\item Architected and built an algorithmic trading platform handling \textbf{1000+ transactions/min} with concurrent strategy execution in Golang
+\item Designed microservices for trading lifecycle: signals, risk, execution, and order management
+\item Built high-performance event processing system ensuring reliable and ordered trade execution
+\item Developed backtesting platform with configurable strategies and visualization for performance analysis
 \end{tightemize}
 
 \runsubsection{Railofy}
 \descript{- Software Development Engineer 2 }
-\location{February 2022 - June 2024 - \href{https://railofy.com}{railofy.com}}
+\location{February 2022 - June 2024}
 \begin{tightemize}
-\item Built high-throughput data pipeline in Golang, handling 10K+ daily PNR records with 97\% accuracy
-\item Developed resilient scraper services with IP rotation, captcha bypass, and fault tolerance mechanisms
-\item Implemented scalable pricing service processing millions of train availability data points for dynamic insurance offers
-\item Engineered an event-driven notification framework using Kafka for reliable delivery of 10K+ daily notifications across multiple channels
-\item Optimized database queries and implemented caching strategies, reducing API response times by 65\%
-\item Led migration of critical services from Node.js to Golang, improving throughput by 2x and reducing resource utilization
-\item Designed and implemented comprehensive monitoring and alerting system using Grafana, Prometheus and ELK stack
+\item Built scalable data pipelines processing \textbf{10K+ daily PNR records} with high accuracy
+\item Designed event-driven notification system using Kafka for reliable multi-channel delivery
+\item Improved system performance by \textbf{65\%} via query optimization and caching strategies
+\item Migrated critical services from Node.js to Golang, achieving \textbf{2x throughput improvement}
 \end{tightemize}
 
 \runsubsection{Yellow Class}
-\descript{- Fullstack Software Developer 2 }
-\location{August 2020 - January 2022 - \href{https://yellowclass.com}{yellowclass.com}}
+\descript{- Fullstack Software Developer }
+\location{August 2020 - January 2022}
 \begin{tightemize}
-\item Architected and developed scalable admin panel with NSFW filters handling operations for customer support team, incorporating role-based access control
-\item Implemented performance optimizations for MongoDB, improving query response times by 80\% through indexing and query restructuring
-\item Designed and developed distributed file processing system handling video content using Dropbox API, S3, and AWS MediaConvert
-\item Engineered content recommendation system using ElasticSearch and RabbitMQ with 40\% improvement in user engagement
-\item Developed high-performance PDF certificate generation service in Golang, processing 1K+ certificates daily with dynamic templating
-\end{tightemize}
-
-\runsubsection{African Price}
-\descript{- Freelance Developer }
-\location{May 2020 - July 2020}
-\begin{tightemize}
-\item Designed a scalable Q\&A platform with microservices approach using React and Node. Implemented auth \& rate limiting
-\item Developed custom rich text editor extending DraftJS with specialized formatting capabilities for domain-specific content
+\item Developed scalable admin systems with RBAC and operational tooling for support teams
+\item Built distributed media processing pipelines using AWS services for video content handling
+\item Improved database performance by \textbf{80\%} through indexing and query optimization
+\item Engineered recommendation systems improving user engagement by \textbf{40\%}
 \end{tightemize}
 
 \end{minipage} 
