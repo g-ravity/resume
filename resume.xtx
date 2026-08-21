@@ -1,11 +1,69 @@
 \documentclass[]{deedy-resume-openfont}
 
+
+% ============================================================
+%  ONE-PAGE FIT OVERRIDES  (all self-contained; .cls untouched)
+%  Tune the four knobs below if content is ever added/removed.
+% ============================================================
+\usepackage{geometry}
+\geometry{hmargin=1.15cm, vmargin=0.75cm}
+
+\newcommand{\bodyfs}{10}      % body font size
+\newcommand{\bodylead}{12} % body line spacing
+
+% Section separator: was 8pt
+\renewcommand{\sectionsep}{\vspace{6pt}}
+
+% Section headings: was 16pt/24pt
+\titleformat{\section}{\color{headings}
+\scshape\fontspec[Path = fonts/lato/]{Lato-Lig}\fontsize{15pt}{19pt}\selectfont \raggedright\uppercase}{}{0em}{}
+
+% Sub headings: was 12pt/12pt
+\titleformat{\subsection}{
+\color{subheadings}\fontspec[Path = fonts/lato/]{Lato-Bol}\fontsize{10.5pt}{12pt}\selectfont\bfseries\uppercase}{}{0em}{}
+
+\renewcommand{\runsubsection}[1]{
+\color{subheadings}\fontspec[Path = fonts/lato/]{Lato-Bol}\fontsize{10.5pt}{12pt}\selectfont\bfseries\uppercase {#1} \normalfont}
+
+% Descriptor line: was 11pt/13pt
+\renewcommand{\descript}[1]{
+\color{subheadings}\raggedright\scshape\fontspec[Path = fonts/raleway/]{Raleway-Medium}\fontsize{9.5pt}{11pt}\selectfont {#1 \\} \normalfont}
+
+% Date/location line: was 10pt/12pt
+\renewcommand{\location}[1]{
+\color{headings}\raggedright\fontspec[Path = fonts/raleway/]{Raleway-Medium}\fontsize{8.5pt}{10pt}\selectfont {#1\\} \normalfont}
+
+% Name block: was 40pt/60pt
+\renewcommand{\namesection}[3]{
+\centering{
+\fontsize{34pt}{44pt}
+\fontspec[Path = fonts/lato/]{Lato-Hai}\selectfont #1
+\fontspec[Path = fonts/lato/]{Lato-Lig}\selectfont #2
+} \\[3pt]
+\centering{
+\color{headings}
+\fontspec[Path = fonts/raleway/]{Raleway-Medium}\fontsize{10pt}{12pt}\selectfont #3}
+\noindent\makebox[\linewidth]{\color{headings}\rule{\paperwidth}{0.4pt}}
+\vspace{-14pt}
+}
+
+% Bullet lists: fixes the date/bullet collision the old \\[10pt] was masking
+\renewenvironment{tightemize}{%
+\vspace{2pt}\begin{itemize}\setlength{\itemsep}{1pt}\setlength{\parskip}{0pt}%
+\setlength{\parsep}{0pt}\setlength{\topsep}{0pt}\setlength{\partopsep}{0pt}%
+\setlength{\leftmargin}{1.2em}}%
+{\end{itemize}}
+
+\providecommand{\custombold}[1]{\color{subheadings}\fontspec[Path = fonts/lato/]{Lato-Bol}\selectfont #1 \normalfont}
+% ============================================================
+
 \begin{document}
+\fontsize{\bodyfs}{\bodylead}\selectfont
 
 \lastupdated
 
 \namesection{Ravik}{Ganguly}{
-\href{mailto:theravikganguly@gmail.com}{theravikganguly@gmail.com} | 86971-55714}
+\href{mailto:theravikganguly@gmail.com}{theravikganguly@gmail.com} | +91 86971-55714}
 
 \begin{minipage}[t]{0.33\textwidth} 
 
@@ -31,29 +89,17 @@ Blogs: \href{https://medium.com/@ravikganguly}{\custombold{@ravikganguly}} \\
 \sectionsep
 
 \section{Skills}
-\subsection{Languages}
-Typescript - Javascript - Python - Golang
-\sectionsep
-\subsection{Front-End}
-React - Next.js - Tailwind
-\sectionsep
-\subsection{Back-End}
-Node.js - NestJS - gRPC - Golang
+\subsection{Backend}
+Typescript - Node.js - NestJS - gRPC - Golang - Python
 \sectionsep
 \subsection{Databases}
 PostgreSQL - MongoDB - Redis - ElasticSearch - ClickHouse
 \sectionsep
-\subsection{Cloud \& Infra}
-AWS - GCP
-\sectionsep
 \subsection{DevOps}
-Docker - Kubernetes - Jenkins - Grafana - Prometheus
-\sectionsep
-\subsection{Architecture}
-Microservices - Event-Driven - System Design
+Docker - Kubernetes - Grafana - Loki - Jenkins
 \sectionsep
 \subsection{Tools}
-Kafka - RabbitMQ - Jest
+Kafka - Redis - Nginx - Jest
 \sectionsep
 
 \end{minipage} 
@@ -63,44 +109,45 @@ Kafka - RabbitMQ - Jest
 \section{Experience}
 
 \runsubsection{Convosight}
-\descript{- Senior Software Engineer }
-\location{March 2025 - Present}
-\begin{tightemize}\\[10pt]
-\item Led end-to-end development of \textbf{Persona}, a core product used by large enterprise clients; collaborated with PM and led FE + QA to deliver production-grade features
-\item Built \textbf{Aria}, an AI-powered social research insights platform using LangGraph agents for automated insight generation from large-scale social data
-\item Designed and implemented scalable \textbf{data ingestion pipelines} to onboard branded profiles and high-volume social media posts
-\item Developed internal tools to \textbf{detect and track brand crisis trends} from ingested data, enabling weekly actionable insights for clients
-\item Improved product reliability and data processing efficiency through structured pipelines and observability enhancements
+\descript{| Social Intelligence | Senior Software Engineer }
+\location{March 2025 - July 2026}
+\vspace{5pt}
+\begin{tightemize}
+\item Led Persona, an agentic platform that turns a target demographic into an interviewable entity — expanding the demographic definition, researching it against real social content, and distilling it into a persona that brand managers can query to test claims, ads, and messaging.
+\item Owned backend architecture for Persona as IC while directing 1 FE and 1 QA engineer in partnership with the PM.
+\item Built Aria, a LangGraph agent for social research, which screens the query, decomposes complex asks into sub-questions, selects filters and calls internal MCP tools to retrieve matching posts and comments, then surfaces its retrieval plan for human approval before executing and synthesizing the answer.
+\item Established Aria's evaluation loop to measure answer quality. Used structured internal review feedback over a month of testing, and 50+ analyst-written real client reports as reference answers for this.
+\item Built social data ingestion across Reddit, X, Instagram, TikTok, and YouTube comments via official APIs, Apify and Phyllo providers, and a Chrome extension for TikTok where no API access existed. Ingested and indexed around 2 million posts in Elastic.
+\item Built daily brand-crisis detection over ElasticSearch, which uses brand keywords to check indexed posts, filters for negative-sentiment terms, and routes results to an LLM classifier for severity scoring and false-positive suppression.
+\item Instrumented end-to-end distributed tracing across microservices with OpenTelemetry, and built Grafana dashboards for API errors, token consumption, and LLM spend, giving the team per-feature cost attribution as agent usage grew over time.
 \end{tightemize}
 
 \runsubsection{Dhan Yojana}
-\descript{- Core Engineer }
+\descript{| Algo Trading Platform | Core Engineer }
 \location{July 2024 - February 2025}
 \begin{tightemize}
-\item Architected and built an algorithmic trading platform handling \textbf{1000+ transactions/min} with concurrent strategy execution in Golang
-\item Designed microservices for trading lifecycle: signals, risk, execution, and order management
-\item Built high-performance event processing system ensuring reliable and ordered trade execution
-\item Developed backtesting platform with configurable strategies and visualization for performance analysis
+\item Built real-time tick processing path in Go — ingesting broker feed ticks, persisting to TimescaleDB, updating live candlestick, and driving active-trades with p99 around 1.2ms.
+\item Designed risk engine to determine position sizing, drawdown limits, price-spike guards, and a kill switch that closes all positions or opens offsetting positions with a secondary broker when an order freezes on the primary.
+\item Built a backtesting engine, modeling slippage and fees, with performance visualization metrics.
 \end{tightemize}
 
 \runsubsection{Railofy}
-\descript{- Software Development Engineer 2 }
+\descript{| Travel Insurance Tech | SDE 2 }
 \location{February 2022 - June 2024}
 \begin{tightemize}
-\item Built scalable data pipelines processing \textbf{10K+ daily PNR records} with high accuracy
-\item Designed event-driven notification system using Kafka for reliable multi-channel delivery
-\item Improved system performance by \textbf{65\%} via query optimization and caching strategies
-\item Migrated critical services from Node.js to Golang, achieving \textbf{2x throughput improvement}
+\item Built a resilient stateless PNR status pipeline scraping 10K+ daily records from an upstream rail portal — headless browser automation with distributed IP rotation and using Tesseract OCR.
+\item Built event-driven WhatsApp and email delivery on Kafka, fronted by a dedicated idempotency service, eliminating duplicate notifications on consumer retries.
+\item Cut p50 latency by \textbf{65\%} across core services through eager cache reads and composite indexes on long-running queries.
+\item Migrated train service (schedules, coach composition) and PNR tracking service from Node.js to Golang, doubling throughput.
 \end{tightemize}
 
-\runsubsection{Yellow Class}
-\descript{- Fullstack Software Developer }
+\runsubsection{SpeakX}
+\descript{| AI English Speaking App | Fullstack Developer }
 \location{August 2020 - January 2022}
 \begin{tightemize}
-\item Developed scalable admin systems with RBAC and operational tooling for support teams
-\item Built distributed media processing pipelines using AWS services for video content handling
-\item Improved database performance by \textbf{80\%} through indexing and query optimization
-\item Engineered recommendation systems improving user engagement by \textbf{40\%}
+\item Automated video ingest from Dropbox via its API, queueing transfers to S3 with retry and idempotency handling to survive partial failures and duplicate events.
+\item Triggered a transcoding pipeline on S3 upload events to produce 360p/480p/720p/1080p renditions, letting the player step down quality on poor connections instead of buffering.
+\item Developed an Instragram reels like feed for content delivery, driving engagement up by around \textbf{40\%}
 \end{tightemize}
 
 \end{minipage} 
