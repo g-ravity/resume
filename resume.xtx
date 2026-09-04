@@ -57,6 +57,14 @@
 \providecommand{\custombold}[1]{\color{subheadings}\fontspec[Path = fonts/lato/]{Lato-Bol}\selectfont #1 \normalfont}
 % ============================================================
 
+\renewcommand{\lastupdated}{%
+  \begin{textblock}{25}(180,10)% Position (percentage across, percentage down)
+    \color{gray}% Change text color
+    \fontsize{8pt}{10pt}\selectfont% Change font size
+    Last Updated on \today% Change text or use a fixed date
+  \end{textblock}%
+}
+
 \begin{document}
 \fontsize{\bodyfs}{\bodylead}\selectfont
 
