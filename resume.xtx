@@ -113,7 +113,7 @@ Kafka - Redis - Nginx - Jest
 \location{March 2025 - July 2026}
 \vspace{5pt}
 \begin{tightemize}
-\item Led Persona, an agentic platform that turns a target demographic into an interviewable entity — expanding the demographic definition, researching it against real social content, and distilling it into a persona that brand managers can query to test claims, ads, and messaging.
+\item Led Persona, an agentic platform that turns a target demographic into an interviewable entity expanding the demographic definition, researching it against real social content, and distilling it into a persona that brand managers can query to test claims, ads, and messaging.
 \item Owned backend architecture for Persona as IC while directing 1 FE and 1 QA engineer in partnership with the PM.
 \item Built Aria, a LangGraph agent for social research, which screens the query, decomposes complex asks into sub-questions, selects filters and calls internal MCP tools to retrieve matching posts and comments, then surfaces its retrieval plan for human approval before executing and synthesizing the answer.
 \item Established Aria's evaluation loop to measure answer quality. Used structured internal review feedback over a month of testing, and 50+ analyst-written real client reports as reference answers for this.
@@ -126,7 +126,7 @@ Kafka - Redis - Nginx - Jest
 \descript{| Algo Trading Platform | Core Engineer }
 \location{July 2024 - February 2025}
 \begin{tightemize}
-\item Built real-time tick processing path in Go — ingesting broker feed ticks, persisting to TimescaleDB, updating live candlestick, and driving active-trades with p99 around 1.2ms.
+\item Built real-time tick processing path in Go, ingesting broker feed ticks, persisting to TimescaleDB, updating live candlestick, and driving active-trades with p99 around 1.2ms.
 \item Designed risk engine to determine position sizing, drawdown limits, price-spike guards, and a kill switch that closes all positions or opens offsetting positions with a secondary broker when an order freezes on the primary.
 \item Built a backtesting engine, modeling slippage and fees, with performance visualization metrics.
 \end{tightemize}
@@ -135,7 +135,7 @@ Kafka - Redis - Nginx - Jest
 \descript{| Travel Insurance Tech | SDE 2 }
 \location{February 2022 - June 2024}
 \begin{tightemize}
-\item Built a resilient stateless PNR status pipeline scraping 10K+ daily records from an upstream rail portal — headless browser automation with distributed IP rotation and using Tesseract OCR.
+\item Built a resilient stateless PNR status pipeline scraping 10K+ daily records from an upstream rail portal using headless browser automation with distributed IP rotation and using Tesseract OCR.
 \item Built event-driven WhatsApp and email delivery on Kafka, fronted by a dedicated idempotency service, eliminating duplicate notifications on consumer retries.
 \item Cut p50 latency by \textbf{65\%} across core services through eager cache reads and composite indexes on long-running queries.
 \item Migrated train service (schedules, coach composition) and PNR tracking service from Node.js to Golang, doubling throughput.
@@ -145,9 +145,9 @@ Kafka - Redis - Nginx - Jest
 \descript{| AI English Speaking App | Fullstack Developer }
 \location{August 2020 - January 2022}
 \begin{tightemize}
-\item Automated video ingest from Dropbox via its API, queueing transfers to S3 with retry and idempotency handling to survive partial failures and duplicate events.
+\item Automated video ingest from Dropbox via it's API, queueing transfers to S3 with retry and idempotency handling to survive partial failures and duplicate events.
 \item Triggered a transcoding pipeline on S3 upload events to produce 360p/480p/720p/1080p renditions, letting the player step down quality on poor connections instead of buffering.
-\item Developed an Instragram reels like feed for content delivery, driving engagement up by around \textbf{40\%}
+\item Developed an Instagram reels like feed for content delivery, driving engagement up by around \textbf{40\%}
 \end{tightemize}
 
 \end{minipage} 
